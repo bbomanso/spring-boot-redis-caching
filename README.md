@@ -24,7 +24,7 @@
 
 ## Step 2: Configure Project Dependencies
 
-- We need to add dependencies as per our project requirements.
+We need to add dependencies as per our project requirements.
   
 ![image](https://user-images.githubusercontent.com/119079911/210108378-2a332f9a-8fc3-4c7c-a773-4ef04d1970f9.png)
 
