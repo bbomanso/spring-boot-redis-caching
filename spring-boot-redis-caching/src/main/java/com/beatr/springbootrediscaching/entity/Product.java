@@ -2,24 +2,26 @@ package com.beatr.springbootrediscaching.entity;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "product")
-public class Product {
+public class Product implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long productId;
     private String productName;
     private String productBrand;
-    private int productQty;
+    private double productPrice;
 
     public Product() {
     }
 
-    public Product(String productName, String productBrand, int productQty) {
+    public Product(String productName, String productBrand, int productPrice) {
         this.productName = productName;
         this.productBrand = productBrand;
-        this.productQty = productQty;
+        this.productPrice = productPrice;
     }
 
     public Long getProductId() {
@@ -46,12 +48,12 @@ public class Product {
         this.productBrand = productBrand;
     }
 
-    public int getProductQty() {
-        return productQty;
+    public double getProductPrice() {
+        return productPrice;
     }
 
-    public void setProductQty(int productQty) {
-        this.productQty = productQty;
+    public void setProductPrice(double productPrice) {
+        this.productPrice = productPrice;
     }
 
     @Override
@@ -60,7 +62,7 @@ public class Product {
                 "productId=" + productId +
                 ", productName='" + productName + '\'' +
                 ", productBrand='" + productBrand + '\'' +
-                ", productQty=" + productQty +
+                ", productPrice=" + productPrice +
                 ']';
     }
 }
