@@ -7,7 +7,7 @@
 ![image](https://user-images.githubusercontent.com/119079911/210106704-34fdf25c-d1ba-4522-87de-4c0fda7825a1.png)
 
 - On the left menu select *Spring Initializr*.
-- After that, a screen to configure the initializr website and JDK to use in this project will be displayed on the left side.
+- After that, a screen to configure your project will be displayed on the right side.
   - **Name**: give a name to your Spring Boot Application.
   - **Localtion**: Select the folder where you want your project to be created.
   - **Language**: select *Java*.
